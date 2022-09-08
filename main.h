@@ -6,15 +6,15 @@
 #include <Windows.h>
 #include <direct.h>
 
-#define MAX_WEAPON 23				// ÃÖ´ë ¹«±â °³¼ö
-#define MAX_CHARACTER 43			// ÃÖ´ë Ä³¸¯ÅÍ ¼ö
-#define MAX_SMALLOBJECT 12			// ÃÖ´ë ¼ÒÇ° ¼ö(Ãß°¡ ¼ÒÇ° Æ÷ÇÔ)
+#define MAX_WEAPON 23				// ìµœëŒ€ ë¬´ê¸° ê°œìˆ˜
+#define MAX_CHARACTER 43			// ìµœëŒ€ ìºë¦­í„° ìˆ˜
+#define MAX_SMALLOBJECT 12			// ìµœëŒ€ ì†Œí’ˆ ìˆ˜(ì¶”ê°€ ì†Œí’ˆ ì œì™¸)
 
-#define MAX_WEAPON_LENGTH 29		// ÃÖ´ë ¹«±â Á¤º¸ ¼ö
-#define MAX_CHARACTER_LENGTH 7		// ÃÖ´ë Ä³¸¯ÅÍ Á¤º¸ ¼ö
-#define MAX_SMALLOBJECT_LENGTH 6	// ÃÖ´ë ¼ÒÇ° Á¤º¸ ¼ö
+#define MAX_WEAPON_LENGTH 29		// ìµœëŒ€ ë¬´ê¸° ì •ë³´ ìˆ˜
+#define MAX_CHARACTER_LENGTH 7		// ìµœëŒ€ ìºë¦­í„° ì •ë³´ ìˆ˜
+#define MAX_SMALLOBJECT_LENGTH 6	// ìµœëŒ€ ì†Œí’ˆ ì •ë³´ ìˆ˜
 
-enum class XOPS096T : unsigned int {			// XOPS096°ú µ¿ÀÏ
+enum class XOPS096T : unsigned int {			// XOPS096ê³¼ ë™ì¼
 	EP = 0x4FCD8,
 	WeaponOffset = 0x5D32C,
 	CharacterOffset = 0x5D864,
