@@ -10,10 +10,6 @@
 #define MAX_CHARACTER 43			// 최대 캐릭터 수
 #define MAX_SMALLOBJECT 12			// 최대 소품 수(추가 소품 제외)
 
-#define MAX_WEAPON_LENGTH 29		// 최대 무기 정보 수
-#define MAX_CHARACTER_LENGTH 7		// 최대 캐릭터 정보 수
-#define MAX_SMALLOBJECT_LENGTH 6	// 최대 소품 정보 수
-
 enum class XOPS096T : unsigned int {			// XOPS096과 동일
 	EP = 0x4FCD8,
 	WeaponOffset = 0x5D32C,
