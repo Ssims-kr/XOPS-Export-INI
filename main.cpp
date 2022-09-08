@@ -333,7 +333,7 @@ bool WriteWeaponINI(WeaponParameter& wParam, int num) {
 	fprintf(fp, "YAKKYOU_SY = %f\n", (float)wParam.yakkyou_sy);
 	fprintf(fp, "BurstCnt = %d\n", wParam.mode);
 	fprintf(fp, "ScopeMode = %d\n", wParam.scope);
-	fprintf(fp, "Size = %f\n", (float)wParam.size);
+	fprintf(fp, "Size = %f\n", (float)wParam.size * 0.1f);
 	fprintf(fp, "SoundID = %d\n", wParam.sound_id);
 	fprintf(fp, "SoundVolume = %d\n", wParam.sound_volume);
 	fprintf(fp, "Silencer = %s\n", (wParam.silencer == 0) ? "false" : "true");
