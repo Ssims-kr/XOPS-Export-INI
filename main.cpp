@@ -399,7 +399,6 @@ bool WriteCharacterINI(CharacterParameter& cParam, int num) {
 		case 28: { textureNum = 22; } break;
 		case 29: { textureNum = 3; } break;
 	}
-	fprintf(fp, "Texture = %d\n", textureNum);
 
 	int modelNum = 0;
 	switch (cParam.up_model) {
@@ -413,6 +412,7 @@ bool WriteCharacterINI(CharacterParameter& cParam, int num) {
 
 	fprintf(fp, "[Character]\n");
 	fprintf(fp, "Model = %d\n", modelNum);
+	fprintf(fp, "Texture = %d\n", textureNum);
 	fprintf(fp, "HP = %d\n", cParam.hp);
 	fprintf(fp, "AILevel = %d\n", cParam.ai_level-1);
 	fprintf(fp, "Weapon1 = %d\n", cParam.secondary_weapon);
